@@ -8,7 +8,7 @@ class Rectangle {
 		return this.width * this.height;
 	}
 }
-	class Square extends Recangle{
+	class Square extends Rectangle{
 	constructor(side){
 		this.side = side;
 	}
