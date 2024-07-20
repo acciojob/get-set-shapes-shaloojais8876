@@ -4,16 +4,23 @@ class Rectangle {
 		this.width = width,
 		this.height = height,
 	}
+	get width {
+	return this.width;
+	}
+    get height{
+	return this.height;
+}
 	get getArea(){
 		return this.width * this.height;
 	}
 }
 	class Square extends Rectangle{
 	constructor(side){
+		super(side,side); //pass side to both width and height of Rectangle
 		this.side = side,
 	}
 		get getPerimeter(){
-			return this.side * 4;
+			return 4 * this.width ;
 		}
 }
 const rectangle = new Rectangle(5, 10);
