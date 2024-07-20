@@ -1,16 +1,16 @@
 //complete this code
 class Rectangle {
 	constructor(width,height){
-		this._width = width,
-		this._height = height,
+		this._width = width;
+		this._height = height;
 	}
-	get width {
+	get width() {
 	return this._width;
 	}
-    get height{
+    get height(){
 	return this._height;
 }
-	get getArea(){
+	getArea(){
 		return this._width * this._height;
 	}
 }
@@ -19,7 +19,7 @@ class Rectangle {
 		super(side,side); //pass side to both width and height of Rectangle
 	
 	}
-		get getPerimeter(){
+		getPerimeter(){
 			return 4 * this.width ;
 		}
 }
